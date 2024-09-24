@@ -31,3 +31,5 @@ Another challenge I faced in this assignment was the height(node) function that 
 The idea is to recursively iterate down every path until the final leaf node, then pick the side with the larger amount of edges and sum them as the recursive code comes back up.
 
 ## Notes
+
+In the current implementation, the program logs the tree visualization from the prettyPrint() function right into the command line, but it's totally feasible to add some quick interface with HTML and CSS.
