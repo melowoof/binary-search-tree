@@ -21,15 +21,17 @@ The project is primarily focused on the JavaScript logic of creating a binary se
 
 ## Challenges
 
-A convoluted challenge I faced in this project was the deleteItem(value) function. In a binary search tree, deleting values aren't very straightforward but instead come with several cases one has to check - one such being whether a particular node you want to remove has children or not. Deleting a non-leaf node involves considering how its children will be rearranged.
+A convoluted challenge encountered in this project was the deleteItem(value) function. In a binary search tree, deleting values isn't very straightforward and comes with several cases that need to be checked—one such case being whether a particular node to be removed has children. Deleting a non-leaf node involves considering how its children will be rearranged.
 
-The delete function becomes a mini-colossus after a while with all the different while-if statements to check for cases, however code-commenting and debugging on the other hand is quite straightforward and self-evident in the while-if statements.
+The delete function becomes a mini-colossus over time with all the different while-if statements to check for cases; however, code-commenting and debugging are quite straightforward and self-evident in the while-if statements.
 
-At one point, I had written a hasValue(value) help function that checks for whether the array that is used to build the tree already contains a certain value. Afterwards through some consideration I then realized that the function has a time complexity of O(N) due to the way it iterates through the original array to check for existing values. This wasn't really a difficult fix, but just something to keep in mind for the future in consideration of performance. At the end I only had to alter some while-loops that were already present in other functions to check also for the values that are sent in as parameters, since those functions already iterate through the binary search tree which has a time complexity of O(log N) which is faster than doing it with an array.
+At one point, a hasValue(value) helper function was written to check whether the array used to build the tree already contains a certain value. After some consideration, it was realized that the function has a time complexity of O(N) due to the way it iterates through the original array to check for existing values. This wasn't a difficult fix, but it is something to keep in mind for future performance considerations. Ultimately, only some while-loops that were already present in other functions needed to be altered to also check for the values sent in as parameters, since those functions already iterate through the binary search tree, which has a time complexity of O(log N), faster than doing it with an array.
 
-Another challenge I faced in this assignment was the height(node) function that takes in a node and returns the largest number of edges from that node to a leaf node. Initially it sounded simple to implement, but I couldn't really make up a pseudocode for it and thus found some help from an old thread on StackOverflow with this very useful answer and implementation, with a video someone had included explaining the theory behind the function code.
+Another challenge in this assignment was the height(node) function that takes in a node and returns the largest number of edges from that node to a leaf node. Initially, it sounded simple to implement, but creating pseudocode for it proved difficult. Assistance was found in an old thread on StackOverflow, which included a very useful answer and implementation, along with a video explaining the theory behind the function code.
+
 [StackOverflow answer](https://stackoverflow.com/a/2597754/27288474)
 [YouTube Video](https://youtu.be/AWIJwNf0ZQE)
+
 The idea is to recursively iterate down every path until the final leaf node, then pick the side with the larger amount of edges and sum them as the recursive code comes back up.
 
 ## Notes
