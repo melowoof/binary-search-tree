@@ -8,10 +8,11 @@ Binary search tree exercise.
 
 ## Features
 
-- Initialize nodes and see the tree grow dynamically
+- Initialize nodes and see the tree's visualization
 - Insert nodes
 - Rebalance tree
-- Designed to mimic the appearance of a shrub
+- Print values in level-order, pre-order, in-order, and post-order
+<!-- - Designed to mimic the appearance of a shrub -->
 
 ## Summary
 
