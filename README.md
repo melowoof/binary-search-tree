@@ -1,6 +1,7 @@
 # Binary-search-tree
 
 Binary search tree exercise.
+![alt text](<Code_main.js — odin-binary-search-tree_0924_gbIkE1MR.gif>)
 
 ## Links
 
